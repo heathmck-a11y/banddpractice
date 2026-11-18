@@ -40,12 +40,12 @@
     background-attachment: fixed;
   }
   main { max-width: 1200px; margin: 0 auto; padding: 16px; }
-  h1 { margin: 0; font-size: 2.2rem; color: #fff; letter-spacing: 0.01em; }
+  h1 { margin: 0 0 6px; font-size: clamp(2.8rem, 7vw, 4.8rem); line-height: 1; font-weight: 800; color: var(--yellow); letter-spacing: 0.01em; text-shadow: 0 5px 0 var(--indigo), 0 0 22px rgba(30,27,75,0.35); }
   h2 { margin: 0 0 12px; font-size: 1.4rem; }
-  p.sub { margin: 4px 0 0; color: #e0e7ff; font-size: 1.05rem; }
+  p.sub { margin: 6px 0 0; color: #e0e7ff; font-size: 1.15rem; }
   label { font-weight: bold; display: block; margin-bottom: 6px; }
 
-  .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 24px; margin-bottom: 26px; flex-wrap: wrap; }
   .brandtext { flex: 1 1 340px; min-width: 0; }
 
   button {
@@ -205,7 +205,6 @@
     .stage { grid-template-columns: 1fr; }
     .twocol { grid-template-columns: 1fr; }
     .card { height: 40vh; }
-    h1 { font-size: 1.7rem; }
   }
   @media print {
     body { background: #fff; color: #000; }
