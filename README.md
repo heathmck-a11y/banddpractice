@@ -1,4 +1,4 @@
-# b or d Mouth Check
+# b or d Check
 
 A single-file web app for small groups of students who mix up b and d.
 
