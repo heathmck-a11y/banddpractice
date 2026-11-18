@@ -96,6 +96,13 @@
   .illus { margin: 0; flex: none; width: min(240px, 100%); background: #fff; border: 3px solid var(--indigo); border-radius: 18px; box-shadow: 0 5px 0 var(--indigo); padding: 8px; }
   .illus img { display: block; width: 100%; height: auto; border-radius: 10px; }
 
+  .qrbox { display: flex; align-items: center; gap: 16px; margin-top: 26px; max-width: 720px; }
+  .qr { flex: none; width: 116px; height: 116px; background: #fff; border: 3px solid var(--indigo); border-radius: 14px; box-shadow: 0 4px 0 var(--indigo); padding: 2px; }
+  .qr svg { display: block; width: 100%; height: 100%; }
+  .qrtext { margin: 0; color: #e0e7ff; font-size: 1rem; line-height: 1.4; }
+  .qrtext strong { color: #fff; font-size: 1.1rem; }
+  .qrurl { font-size: 0.9rem; opacity: 0.85; }
+
   /* Play */
   .topbar { display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; margin-bottom: 16px; }
   .scoreboard { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -253,6 +260,10 @@
       <p class="note" style="margin-top:-6px">Each student gets an equal number of b and d cards (one extra of a random letter if the number of turns is odd).</p>
       <p id="setupError" class="error" role="alert" hidden></p>
       <p style="margin-top:20px"><button id="startBtn">Start</button></p>
+    </div>
+    <div class="qrbox">
+      <div class="qr"><svg role="img" aria-label="QR code that opens the b or d Check app" viewBox="0 0 164 164" class="segno"><g transform="scale(4)"><path fill="#fff" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#1e1b4b" d="M4 4.5h7m1 0h1m1 0h1m1 0h5m1 0h2m1 0h1m1 0h1m2 0h7m-33 1h1m5 0h1m4 0h1m3 0h1m4 0h3m1 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m4 0h2m2 0h1m5 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m3 0h1m2 0h1m1 0h1m1 0h3m2 0h3m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m2 0h1m1 0h7m1 0h2m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h1m1 0h1m6 0h1m2 0h3m1 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-24 1h2m3 0h3m1 0h2m1 0h2m-22 1h7m2 0h1m1 0h1m1 0h4m2 0h1m1 0h1m1 0h1m2 0h2m3 0h1m-31 1h2m1 0h1m2 0h3m2 0h3m1 0h5m1 0h1m2 0h2m1 0h2m1 0h1m-33 1h2m2 0h4m1 0h1m2 0h1m1 0h2m1 0h1m2 0h2m2 0h3m1 0h1m1 0h2m-31 1h2m4 0h1m2 0h1m2 0h4m4 0h1m3 0h2m1 0h3m-31 1h1m1 0h2m2 0h7m3 0h1m1 0h1m3 0h1m1 0h1m2 0h3m1 0h1m-32 1h3m1 0h2m1 0h1m3 0h1m2 0h1m1 0h8m2 0h1m4 0h2m-33 1h1m4 0h2m1 0h7m1 0h2m2 0h1m3 0h3m3 0h2m-32 1h1m1 0h2m4 0h1m2 0h1m1 0h1m1 0h1m2 0h1m2 0h3m1 0h6m-31 1h1m3 0h3m1 0h1m2 0h1m1 0h2m1 0h5m1 0h2m1 0h1m1 0h3m2 0h1m-33 1h2m1 0h3m1 0h2m1 0h1m2 0h1m1 0h1m3 0h1m1 0h1m1 0h1m2 0h2m1 0h4m-32 1h1m1 0h1m1 0h3m2 0h1m2 0h1m3 0h2m1 0h1m4 0h4m1 0h2m-32 1h1m1 0h3m3 0h2m1 0h6m4 0h1m2 0h8m-31 1h1m1 0h1m2 0h1m2 0h1m1 0h2m2 0h4m3 0h1m1 0h2m1 0h3m2 0h1m-33 1h3m2 0h1m1 0h2m3 0h1m1 0h1m4 0h2m2 0h1m2 0h1m2 0h2m1 0h1m-33 1h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h2m1 0h2m8 0h6m-32 1h1m2 0h1m1 0h1m1 0h1m5 0h4m3 0h3m1 0h1m3 0h3m1 0h1m-33 1h1m3 0h3m1 0h2m1 0h1m1 0h1m2 0h1m3 0h1m3 0h5m2 0h2m-25 1h1m1 0h1m5 0h1m2 0h1m1 0h1m2 0h1m3 0h1m1 0h1m1 0h1m-33 1h7m1 0h4m2 0h2m1 0h1m2 0h2m1 0h2m1 0h1m1 0h1m1 0h2m-32 1h1m5 0h1m1 0h1m1 0h1m2 0h3m5 0h4m3 0h5m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m4 0h1m1 0h1m1 0h1m1 0h6m1 0h1m-32 1h1m1 0h3m1 0h1m1 0h3m2 0h2m3 0h3m2 0h3m2 0h1m1 0h1m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h1m3 0h1m1 0h5m1 0h2m-28 1h1m5 0h1m1 0h3m2 0h1m5 0h1m1 0h2m5 0h1m1 0h1m-31 1h7m6 0h1m8 0h3m1 0h2m3 0h1"/></g></svg></div>
+      <p class="qrtext"><strong>Open on another device</strong><br>Scan with a phone or tablet camera.<br><span class="qrurl">heathmck-a11y.github.io/banddpractice</span></p>
     </div>
   </section>
 
